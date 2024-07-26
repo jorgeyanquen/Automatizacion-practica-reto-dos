@@ -19,7 +19,7 @@ public class SimulacionPagePrincipal extends PageObject {
      public WebElementFacade txtSelectsimular;
 
     //campo fecha nacimiento
-     @FindBy(xpath = "//*[@id=\"dp1722006107044\"]")
+     @FindBy(xpath = "//*[@class=\"form-control calendar100YB ng-pristine ng-invalid ng-invalid-required ng-valid-min ng-valid-max ng-valid-ymdateformatstring ng-valid-ymdate-no-weekends hasDatepicker\"]")
      public WebElementFacade txtfecha;
 
     //campo tipo tasa
@@ -46,11 +46,16 @@ public class SimulacionPagePrincipal extends PageObject {
     @FindBy(xpath = "//*[@id=\"for-detail\"]/div[1]/h1")
     public WebElement lblFormValidation;
 
+    //label del home a verificar
+    @FindBy(xpath = "//*[@id=\"for-detail\"]/div[1]/h1")
+    public WebElementFacade lblHomePpal;
 
 
     public void simular(String datoPrueba){
            txtSelectsimular.click();
-         txtSelectsimular.selectByVisibleText(datoPrueba);
+           txtSelectsimular.selectByVisibleText(datoPrueba);
+        txtSelectsimular.click();
+
     }
 
     public void fecha(String datoPrueba){
@@ -62,11 +67,13 @@ public class SimulacionPagePrincipal extends PageObject {
     public void tipotasa(String datoPrueba){
         txttipotasa.click();
          txttipotasa.selectByVisibleText(datoPrueba);
+        txtSelectsimular.click();
     }
 
     public void producto(String datoPrueba){
          txtproducto.click();
             txtproducto.selectByVisibleText(datoPrueba);
+        txtSelectsimular.click();
     }
 
     public void plazo(String datoPrueba){
@@ -80,9 +87,11 @@ public class SimulacionPagePrincipal extends PageObject {
          txtvalor.clear();
             txtvalor.sendKeys(datoPrueba);
     }
-    //label del home a verificar
-    @FindBy(xpath = "//*[@id=\"for-detail\"]/div[1]/h1")
-    public WebElementFacade lblHomePpal;
+
+    public void validate(){
+        btnsimular.click();
+    }
+
 
     public void menuFormValidation() {
 

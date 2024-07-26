@@ -21,18 +21,18 @@ public class SimuladorValidationDefinitions {
 
     @Given("the credit simulation is performed")
     public void the_credit_simulation_is_performed() {
-
+        simuladorValidationSteps.ingresar_form_validation();
     }
     @When("the simulation form is completed")
     public void the_simulation_form_is_completed(DataTable dtDatosForm) {
-      //  List<List<String>> cells = dtDatosForm.cells();
+        List<List<String>> cells = dtDatosForm.cells();
 
-        //for(int i=1; i<cells.size(); i++){
-         //   simuladorValidationSteps.diligenciar_simulacion_datos_tabla(cells, i);
-          //  try{
-           //     Thread.sleep(5000);
-          //  }catch(InterruptedException e){}
-       // }
+        for(int i=1; i<cells.size(); i++){
+            simuladorValidationSteps.diligenciar_simulacion_datos_tabla(cells, i);
+            try{
+                Thread.sleep(10000);
+            }catch(InterruptedException e){}
+        }
     }
     @Then("it is verified that the entry was successful")
     public void it_is_verified_that_the_entry_was_successful() {

@@ -11,5 +11,5 @@ Feature: Bancolombia validation form
     And the credit simulation is performed
     When the simulation form is completed
       | cuota           | fecha      | tipo tasa | producto            | plazo    | valor         |
-      | Simula tu Cuota | 1992-08-31 | Tasa Fija | Libranza Proteccion | 36       | 10,000,000.00 |
+      | Simula tu Cuota | 1992-08-31 | Tasa Fija | Libranza Protección | 36       | 10,000,000.00 |
     Then it is verified that the entry was successful

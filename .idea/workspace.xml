@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e6c9e0f-4a6c-42f8-bccb-107099a24cc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practicados/Step/SimuladorValidationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practicados/pages/SimulacionPagePrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practicados/Step/SimuladorValidationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicados/Step/SimuladorValidationSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/practicados/definitions/SimuladorValidationDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicados/definitions/SimuladorValidationDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SimuladorBancolombiaValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SimuladorBancolombiaValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practicados/pages/SimulacionPagePrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practicados/pages/SimulacionPagePrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
