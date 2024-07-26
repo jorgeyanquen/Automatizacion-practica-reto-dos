@@ -7,7 +7,7 @@ Feature: Bancolombia validation form
   @CasoExitoso
 
   Scenario: Successful completion of the simulation form, no validation message is displayed.
-  Given, the Bancolombia page is accessed
+  Given the Bancolombia page is accessed
     And the credit simulation is performed
     When the simulation form is completed
       | cuota           | fecha      | tipo tasa | producto            | plazo    | valor         |
