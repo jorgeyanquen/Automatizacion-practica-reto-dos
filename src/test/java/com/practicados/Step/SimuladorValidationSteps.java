@@ -24,7 +24,7 @@ public class SimuladorValidationSteps {
 
     @Step
     public void ingresar_form_validation(){
-      //abre el link de la pagina
+        //abre el link de la pagina
         simulacionPagePrincipal.open();
         simulacionPagePrincipal.menuFormValidation();
 

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com.practicados.definitions",
-        tags = "@CasoExitoso"
+        tags = "@Regresion"
 )
 public class Runner {
 }

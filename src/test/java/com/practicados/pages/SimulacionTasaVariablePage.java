@@ -2,24 +2,20 @@ package com.practicados.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 
-
-@DefaultUrl("https://www.bancolombia.com/personas/creditos/consumo/simulador-credito-consumo##sim-results")
-public class SimulacionPagePrincipal extends PageObject {
-
+public class SimulacionTasaVariablePage extends PageObject {
 
     //campo que deseas simular
     @FindBy(xpath = "//*[@id=\"sim-detail\"]/form/div[2]/select")
     public WebElementFacade txtSelectsimular;
 
     //campo fecha nacimiento
-    @FindBy(xpath = "//*[@class=\"form-control calendar100YB ng-pristine ng-invalid ng-invalid-required ng-valid-min ng-valid-max ng-valid-ymdateformatstring ng-valid-ymdate-no-weekends hasDatepicker\"]")
+    @FindBy(xpath = "//*[@class=\"form-control calendar100YB ng-valid-min ng-valid-max ng-valid-ymdate-no-weekends hasDatepicker ng-dirty ng-valid-required ng-valid ng-valid-ymdateformatstring\"]")
     public WebElementFacade txtfecha;
 
     //campo tipo tasa
